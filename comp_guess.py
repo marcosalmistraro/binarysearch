@@ -6,7 +6,7 @@ input("Press ENTER to start")
 
 guess_count = 1
 while low != high:
-    print("\tGuessing in the range {}:{}".format(low,high))
+    print("\tGuessing in the range {}:{}".format(low, high))
     guess = (high + low) // 2
     guess_hilow = input("My guess was {}, should I guess lower or higher? "
                         "Enter h or l, or c in case the answer was right"
@@ -21,7 +21,7 @@ while low != high:
         print(f"The answer is {guess}. I got it in {guess_count} tries.")
         break
     else:
-        print("Please enter an accepted character: h, l or c")
-else:
-    print("You thought of the number {}".format(low))
-    print("I got it in {} tries".format(guess_count))
+        print("Please enter an acceptable character: h, l or c")
+        
+print("You thought of the number {}".format(low))
+print("I got it in {} tries".format(guess_count))
